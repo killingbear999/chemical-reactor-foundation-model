@@ -10,5 +10,3 @@ File description:
 * Under "CSTR+Batch+PFR" folder, CSTR_Batch_PFR_Reptile.ipynb is used to generate the foundation model for all three types of reactors using Reptile,
   model_reptile_cstr_batch.sav is the trained foundation model, and CSTR_Batch_PFR_FewShots.ipynb is used to evaluate the few-shot learning performance
   of the foundation model on unseen chemical reactions as compared with transfer learning-based pre-trained model. </br>
-* Files in "CSTR only" folder are used to compare the performance of Reptile-based foundation model and transfer learning-based pre-trained model on CSTR-based reactions. Files follow the same naming convention as files in "CSTR+Batch+PFR" folder. <br>
-* Files in "CSTR+Batch" folder are used to compare the performance of Reptile-based foundation model and transfer learning-based pre-trained model on CSTR-based + BR-based reactions. Files follow the same naming convention as files in "CSTR+Batch+PFR" folder. <br>
