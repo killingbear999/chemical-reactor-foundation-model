@@ -1,4 +1,4 @@
-# Accelerated Modeling of Various Chemical Reactors using Foundation Models: A Meta-Learning Approach with Physics-Informed Few-shot Adaptation using Reptile
+# Accelerated Modeling of Various Chemical Reactors using Foundation Models: A Meta-Learning Approach using Reptile with Physics-Informed Few-shot Adaptation
 
 Zihao Wang, Zhe Wu </br>
 Paper:  </br>
