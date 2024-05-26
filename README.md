@@ -1,7 +1,7 @@
 # Foundation Model for Chemical Process Modeling: Meta-Learning with Physics-Informed Adaptation
 
 Zihao Wang, Zhe Wu </br>
-Paper:  </br>
+Paper: https://arxiv.org/abs/2405.11752 </br>
 
 **Requires: Python 3.11.3, Tensorflow Keras 2.13.0, Numpy, Sklearn, Pickle** </br>
 File description:
@@ -13,3 +13,14 @@ File description:
   3. CSTR_Fewshots.ipynb is used to fine-tune the foundation models using few-shot learning to adapt to the new chemical reactions in unseen CSTRs, while CSTR_FewShots_Collocation is used to investigate the relationship between few-shot performance in terms of testing MSE and the number of collocation points used in physics-informed-based modelling for CSTR-based reactions. </br>
   4. Batch_Fewshots.ipynb is used to fine-tune the foundation models using few-shot learning to adapt to the new chemical reactions in unseen BRs, while Batch_FewShots_Collocation is used to investigate the relationship between few-shot performance in terms of testing MSE and the number of collocation points used in physics-informed-based modelling for BR-based reactions. </br>
   5. PFR_Fewshots.ipynb is used to fine-tune the foundation models using few-shot learning to adapt to the new chemical reactions in unseen PFRs, while PFR_FewShots_Collocation is used to investigate the relationship between few-shot performance in terms of testing MSE and the number of collocation points used in physics-informed-based modelling for PFR-based reactions. </br>
+
+## Citation </br>
+If you find our work relevant to your research, please cite:
+```
+@article{wang2024foundation,
+  title={Foundation Model for Chemical Process Modeling: Meta-Learning with Physics-Informed Adaptation},
+  author={Wang, Zihao and Wu, Zhe},
+  journal={arXiv preprint arXiv:2405.11752},
+  year={2024}
+}
+```
