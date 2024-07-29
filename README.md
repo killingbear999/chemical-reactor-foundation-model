@@ -16,7 +16,7 @@ Paper: https://arxiv.org/abs/2405.11752 </br>
   5. PFR_Fewshots.ipynb is used to fine-tune the foundation models using few-shot learning to adapt to the new chemical reactions in unseen PFRs, while PFR_FewShots_Collocation is used to investigate the relationship between few-shot performance in terms of testing MSE and the number of collocation points used in physics-informed-based modelling for PFR-based reactions. </br>
 
 **Objective**
-* Constructs a foundation model for various chemical reactions in three classical generic reactors, including continuous stirred tank reactors (CSTRs), batch reactors (BRs), and plug flow reactors (PFRs), enabling rapid adaptation to specific chemical reactions with a minimal number of samples from new tasks (i.e., few-shot adaptation).
+* Constructs a foundation model for various chemical reactions in three classical generic reactors, including continuous stirred tank reactors (CSTRs), batch reactors (BRs), and plug flow reactors (PFRs), enabling rapid adaptation to specific chemical reactions with a minimal number of samples from new tasks (i.e., few-shot adaptation)
 
 ![alt text](https://github.com/killingbear999/chemical-process-foundation-model/blob/main/reptile.png)
 
