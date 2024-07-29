@@ -5,7 +5,7 @@ Paper: https://arxiv.org/abs/2405.11752 </br>
 
 **Requires: Python 3.11.3, Tensorflow Keras 2.13.0, Numpy, Sklearn, Pickle** </br>
 
-**File description** </br>
+**File description**
 * Files in "Sine Wave Regression" folder are used to validate the performance of MAML and Reptile on modelling different sine waves. </br>
 * Files in "Reactors" folder are used to model different types of reactors (i.e., including both normal data-driven method and physics-informed method), including continuous stirred-tank reactors (CSTRs), batch reactors (BRs), and plug flow reactors (PFRs). <br>
 * Under "CSTR+Batch+PFR" folder:
@@ -15,8 +15,8 @@ Paper: https://arxiv.org/abs/2405.11752 </br>
   4. Batch_Fewshots.ipynb is used to fine-tune the foundation models using few-shot learning to adapt to the new chemical reactions in unseen BRs, while Batch_FewShots_Collocation is used to investigate the relationship between few-shot performance in terms of testing MSE and the number of collocation points used in physics-informed-based modelling for BR-based reactions. </br>
   5. PFR_Fewshots.ipynb is used to fine-tune the foundation models using few-shot learning to adapt to the new chemical reactions in unseen PFRs, while PFR_FewShots_Collocation is used to investigate the relationship between few-shot performance in terms of testing MSE and the number of collocation points used in physics-informed-based modelling for PFR-based reactions. </br>
 
-**Objective** </br>
-We construct a foundation model for various chemical reactions in three classical generic reactors, including continuous stirred tank reactors (CSTRs), batch reactors (BRs), and plug flow reactors (PFRs), enabling rapid adaptation to specific chemical reactions with a minimal number of samples from new tasks (i.e., few-shot adaptation).
+**Objective**
+* Constructs a foundation model for various chemical reactions in three classical generic reactors, including continuous stirred tank reactors (CSTRs), batch reactors (BRs), and plug flow reactors (PFRs), enabling rapid adaptation to specific chemical reactions with a minimal number of samples from new tasks (i.e., few-shot adaptation).
 
 ![alt text](https://github.com/killingbear999/chemical-process-foundation-model/blob/main/reptile.png)
 
