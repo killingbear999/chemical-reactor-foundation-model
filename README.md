@@ -4,7 +4,8 @@ Zihao Wang, Zhe Wu </br>
 Paper: https://arxiv.org/abs/2405.11752 </br>
 
 **Requires: Python 3.11.3, Tensorflow Keras 2.13.0, Numpy, Sklearn, Pickle** </br>
-File description:
+
+**File description** </br>
 * Files in "Sine Wave Regression" folder are used to validate the performance of MAML and Reptile on modelling different sine waves. </br>
 * Files in "Reactors" folder are used to model different types of reactors (i.e., including both normal data-driven method and physics-informed method), including continuous stirred-tank reactors (CSTRs), batch reactors (BRs), and plug flow reactors (PFRs). <br>
 * Under "CSTR+Batch+PFR" folder:
