@@ -21,7 +21,7 @@ Paper: https://arxiv.org/abs/2405.11752 </br>
 ![alt text](https://github.com/killingbear999/chemical-process-foundation-model/blob/main/reptile.png)
 
 **Scope** </br>
-Within the scope of this paper, we only considered elementary chemical reactions that transform reactant A to product B (irreversible reaction) for all three types of reactors that can be described by material and energy balance equations (i.e., ODEs or PDEs). Specifically, we consider CSTRs and BRs with a second-order reaction from A to B, and PFR with a first-order reaction from A to B to demonstrate the capability of the proposed modeling method for handling various elementary reactions with different orders and in different reactors.
+Within the scope of this paper, we only considered elementary chemical reactions that transform reactant A to product B (irreversible reaction) for all three types of reactors that can be described by material and energy balance equations (i.e., ODEs or PDEs). Specifically, we consider CSTRs with a second-order reaction from A to B, BRs and PFR with a first-order reaction from A to B to demonstrate the capability of the proposed modeling method for handling various elementary reactions with different orders and in different reactors.
 
 **Methodology** </br>
 Our methodology comprises two distinct phases: meta-training (i.e., meta-learning using **Reptile**) and meta-testing (i.e., **physics-informed** adaptation):
