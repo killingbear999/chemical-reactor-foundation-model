@@ -5,7 +5,7 @@ Paper: https://arxiv.org/abs/2405.11752 (we are working on the updated version) 
 
 **Requires: Python 3.11.3, Tensorflow Keras 2.13.0, Numpy, Sklearn, Pickle** </br>
 
-**File description**
+### File description
 * Files in "Sine Wave Regression" folder are used to validate the performance of MAML and Reptile on modelling different sine waves. </br>
 * Files in "Reactors" folder are used to model different types of reactors (i.e., including both normal data-driven method and physics-informed method), including continuous stirred-tank reactors (CSTRs), batch reactors (BRs), and plug flow reactors (PFRs). <br>
 * Under "CSTR+Batch+PFR" folder:
@@ -14,15 +14,15 @@ Paper: https://arxiv.org/abs/2405.11752 (we are working on the updated version) 
   3. CSTR_Fewshots.ipynb, Batch_Fewshots.ipynb, PFR_Fewshots.ipynb are used to fine-tune the foundation models using few-shot learning to adapt to the new chemical reactions in unseen CSTRs, BRs, PFRs respectively. </br>
   4. CSTR_FewShots_Collocation.ipynb, Batch_FewShots_Collocation.ipynb, PFR_FewShots_Collocation.ipynb are used to investigate the relationship between few-shot performance in terms of testing MSE and the number of collocation points used in physics-informed-based modelling for CSTR-based, BR-based, PFR-based reactions respectively. </br>
 
-**Objective**
+### Objective
 * Constructs a foundation model for various chemical reactions in three classical generic reactors, including continuous stirred tank reactors (CSTRs), batch reactors (BRs), and plug flow reactors (PFRs), enabling rapid adaptation to specific chemical reactions with a minimal number of samples from new tasks (i.e., few-shot adaptation)
 
 ![alt text](https://github.com/killingbear999/chemical-process-foundation-model/blob/main/reptile.png)
 
-**Scope** </br>
+### Scope
 Within the scope of this paper, we only considered elementary chemical reactions that transform reactant A to product B (irreversible reaction) for all three types of reactors that can be described by material and energy balance equations (i.e., ODEs or PDEs). Specifically, we consider CSTRs, BRs and PFRs with integer orders of reactions from A to B to demonstrate the capability of the proposed modeling method for handling various elementary reactions with different orders and in different reactors.
 
-**Methodology** </br>
+### Methodology
 Our methodology comprises two distinct phases: meta-training (i.e., meta-learning using **Reptile**) and meta-testing (i.e., **physics-informed** adaptation):
 
 * During meta-training, we immerse the model (i.e., specifically, a recurrent neural network (RNN)) in a diverse array of chemical reactions across various reactor types. In short, the meta-training process involves two steps. First, we obtain the optimal parameters $W_\tau$ for a specific task $\tau$ using mean-squared error (MSE) and the Adam optimizer (i.e., since we are performing regression). Once $W_\tau$ is determined, we update the network parameters $\theta$ using the Reptile update rule: </br>
@@ -32,13 +32,13 @@ Our methodology comprises two distinct phases: meta-training (i.e., meta-learnin
 
 * In the subsequent meta-testing phase, we select previously unseen chemical reactions and undertake physics-informed few-shot adaptations to them, respectively, leveraging the Reptile-based foundation model obtained during meta-training. It should be pointed out that we use few-shot data $x$ (i.e., $x \in X \subset D$, where $X$ denotes the set of few-shot training data) to compute the data-driven loss term $L_{d}$ and use collocation points $x_c$ (i.e., $x_c \in X_c \subset D$, where $X_c$ denotes the set of collocation data points, and $X \cap  X_c= \emptyset$) to compute the physics-informed loss term $L_{p}$ (i.e., a collocation point refers to a specific location within the domain of interest where the governing physics equations are enforced as part of the training process). As we do not utilize any labeled output data for $L_{p}$, there is no need to perform physical experiments to gather additional data, which remains consistent with our few-shot setting.
 
-**Extension to integer orders of reactions** </br>
+### Extension to integer orders of reactions
 
 Using the outlined methodology, we train distinct foundation models corresponding to different integer orders of reactions. For an unseen reaction, we apply few-shot adaptation to each foundation model, generating intermediate models. Finally, we employ a minimum-voting strategy (selecting the model with the lowest validation/testing MSE) to produce the final adapted model, incorporating an ensemble learning approach.
 
 ![alt text](https://github.com/killingbear999/chemical-process-foundation-model/blob/main/ensemble.png)
 
-**Extension to fractional orders of reactions** </br>
+### Extension to fractional orders of reactions
 To further extend the foundation model to fractional orders of reactions, we expand the meta-training dataset to include random fractional orders. Once the foundation model is trained, we conduct meta-testing (few-shot adaptation) as usual.
 
 ## Citation </br>
