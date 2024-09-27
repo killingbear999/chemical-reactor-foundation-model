@@ -21,7 +21,7 @@ Paper: https://arxiv.org/abs/2405.11752 (we are working on the updated version) 
 ![alt text](https://github.com/killingbear999/chemical-process-foundation-model/blob/main/reptile.png)
 
 **Scope** </br>
-Within the scope of this paper, we only considered elementary chemical reactions that transform reactant A to product B (irreversible reaction) for all three types of reactors that can be described by material and energy balance equations (i.e., ODEs or PDEs). Specifically, we consider CSTRs,  BRs and PFRs with integer-order of reactions from A to B to demonstrate the capability of the proposed modeling method for handling various elementary reactions with different orders and in different reactors.
+Within the scope of this paper, we only considered elementary chemical reactions that transform reactant A to product B (irreversible reaction) for all three types of reactors that can be described by material and energy balance equations (i.e., ODEs or PDEs). Specifically, we consider CSTRs, BRs and PFRs with integer order of reactions from A to B to demonstrate the capability of the proposed modeling method for handling various elementary reactions with different orders and in different reactors.
 
 **Methodology** </br>
 Our methodology comprises two distinct phases: meta-training (i.e., meta-learning using **Reptile**) and meta-testing (i.e., **physics-informed** adaptation):
@@ -33,7 +33,7 @@ Our methodology comprises two distinct phases: meta-training (i.e., meta-learnin
 
 * In the subsequent meta-testing phase, we select previously unseen chemical reactions and undertake physics-informed few-shot adaptations to them, respectively, leveraging the Reptile-based foundation model obtained during meta-training. It should be pointed out that we use few-shot data $x$ (i.e., $x \in X \subset D$, where $X$ denotes the set of few-shot training data) to compute the data-driven loss term $L_{d}$ and use collocation points $x_c$ (i.e., $x_c \in X_c \subset D$, where $X_c$ denotes the set of collocation data points, and $X \cap  X_c= \emptyset$) to compute the physics-informed loss term $L_{p}$ (i.e., a collocation point refers to a specific location within the domain of interest where the governing physics equations are enforced as part of the training process). As we do not utilize any labeled output data for $L_{p}$, there is no need to perform physical experiments to gather additional data, which remains consistent with our few-shot setting.
 
-**Extension to various integer order of reactions** </br>
+**Extension to integer order of reactions** </br>
 
 ![alt text](https://github.com/killingbear999/chemical-process-foundation-model/blob/main/ensemble.png)
 
