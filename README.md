@@ -33,6 +33,10 @@ Our methodology comprises two distinct phases: meta-training (i.e., meta-learnin
 
 * In the subsequent meta-testing phase, we select previously unseen chemical reactions and undertake physics-informed few-shot adaptations to them, respectively, leveraging the Reptile-based foundation model obtained during meta-training. It should be pointed out that we use few-shot data $x$ (i.e., $x \in X \subset D$, where $X$ denotes the set of few-shot training data) to compute the data-driven loss term $L_{d}$ and use collocation points $x_c$ (i.e., $x_c \in X_c \subset D$, where $X_c$ denotes the set of collocation data points, and $X \cap  X_c= \emptyset$) to compute the physics-informed loss term $L_{p}$ (i.e., a collocation point refers to a specific location within the domain of interest where the governing physics equations are enforced as part of the training process). As we do not utilize any labeled output data for $L_{p}$, there is no need to perform physical experiments to gather additional data, which remains consistent with our few-shot setting.
 
+**Extension to various integer order of reactions** </br>
+
+![alt text](https://github.com/killingbear999/chemical-process-foundation-model/blob/main/ensemble.png)
+
 ## Citation </br>
 If you find our work relevant to your research, please cite:
 ```
