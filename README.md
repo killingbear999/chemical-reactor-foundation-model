@@ -48,9 +48,9 @@ To further extend the foundation model to fractional orders of reactions, we exp
 We have conducted real-world experiments to gather experiment data under 9 different conditions for a photochemical reactor, and 7 conditions (i.e., 7 trajectories or 7 shots) are used to fine-tune the foundation model and later test on the remaining 2 conditions.
 
 Our foundation model can rapidly adapt to previously unseen reactor types, such as photochemical reactors, offering several advantages:
-* Few-Shot Adaptation: By leveraging the power of the foundation model and few-shot learning, we only need to conduct a limited number of experiments under a few conditions. This allows the model to effectively generalize to new conditions without extensive data collection. <\br>
-* Versatility Across Reactor Types: The model's adaptability is not limited to common reactor types like CSTR, BR, or PFR; it extends to other reactor types with minimal data requirements. <\br>
-* **No Dependence on First-Principles Models**: Unlike transfer learning, which requires deriving first-principles models to generate simulation datasets - a process that can take days - our foundation model is ready to use immediately. It can deliver impressive performance in just **a few seconds**, making it a practical and efficient solution. <\br>
+* Few-Shot Adaptation: By leveraging the power of the foundation model and few-shot learning, we only need to conduct a limited number of experiments under a few conditions. This allows the model to effectively generalize to new conditions without extensive data collection. </br>
+* Versatility Across Reactor Types: The model's adaptability is not limited to common reactor types like CSTR, BR, or PFR; it extends to other reactor types with minimal data requirements. </br>
+* **No Dependence on First-Principles Models**: Unlike transfer learning, which requires deriving first-principles models to generate simulation datasets - a process that can take days - our foundation model is ready to use immediately. It can deliver impressive performance in just **a few seconds**, making it a practical and efficient solution. </br>
 
 ## Citation </br>
 If you find our work relevant to your research, please cite:
