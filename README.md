@@ -1,7 +1,7 @@
 # Foundation Model for Chemical Reactor Modeling
 
 Zihao Wang, Zhe Wu </br>
-Paper: https://arxiv.org/abs/2405.11752 (we are working on the updated version) </br>
+* Paper: https://arxiv.org/abs/2405.11752 (we are working on the updated version) </br>
 
 **Requires: Python 3.11.3, Tensorflow Keras 2.13.0, Numpy, Sklearn, Pickle** </br>
 
