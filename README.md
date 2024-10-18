@@ -24,7 +24,7 @@ Paper: https://arxiv.org/abs/2405.11752 (we are working on the updated version) 
 ![alt text](https://github.com/killingbear999/chemical-process-foundation-model/blob/main/reptile.png)
 
 ### Scope
-Within the scope of this work, we considered chemical reactors that can be described by material and energy balance equations (i.e., ODEs or PDEs).
+Within the scope of this work, we consider chemical reactors that can be described by material and energy balance equations (i.e., ODEs or PDEs).
 
 ### Methodology
 Our methodology comprises two distinct phases: meta-training (i.e., meta-learning using **Reptile**) and meta-testing (i.e., **physics-informed** adaptation):
