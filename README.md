@@ -1,4 +1,4 @@
-# Towards Foundation Model for Chemical Reactor Modeling: Meta-Learning with Physics-Informed Adaptation
+# Foundation Model for Chemical Reactor Modeling
 
 Zihao Wang, Zhe Wu </br>
 Paper: https://arxiv.org/abs/2405.11752 (we are working on the updated version) </br>
