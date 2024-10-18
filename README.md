@@ -4,6 +4,8 @@ Towards Foundation Model for Chemical Reactor Modeling: Meta-Learning with Physi
 * Zihao Wang, Zhe Wu </br>
 * Paper: https://arxiv.org/abs/2405.11752 (we are working on the updated version) </br>
 
+If you have experimental data on chemical reactors, we invite you to collaborate with us to test our foundation model on your specific case. Our model has demonstrated impressive adaptability when applied to a photochemical reactor, and we are eager to explore its potential with a broader range of systems.
+
 **Requires: Python 3.11.3, Tensorflow Keras 2.13.0, Numpy, Sklearn, Pickle** </br>
 
 ### File description
