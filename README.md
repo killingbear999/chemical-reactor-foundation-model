@@ -45,7 +45,7 @@ Using the outlined methodology, we train distinct foundation models correspondin
 To further extend the foundation model to fractional orders of reactions, we expand the meta-training dataset to include random fractional orders. Once the foundation model is trained, we conduct meta-testing (few-shot adaptation) as usual.
 
 ### Extension to unseen reactor types
-We have conducted real-world experiments to gather experiment data under 9 different conditions for a photochemical reactor, and 7 conditions (i.e., 7 trajectories or 7 shots) are used to fine-tune the foundation model and later test on the remaining 2 conditions (the experiment data and the photochemical resctor design are confidential and considered as the property of the company, and thus will not be made publicly available).
+We have conducted real-world experiments to gather experiment data under 9 different conditions for a photochemical reactor, and 7 conditions (i.e., 7 trajectories or 7 shots) are used to fine-tune the foundation model and later test on the remaining 2 conditions (the experiment data and the photochemical reactor design are confidential and considered as the property of the company, and thus will not be made publicly available).
 
 Our foundation model can rapidly adapt to previously unseen reactor types, such as photochemical reactors, offering several advantages:
 * Few-Shot Adaptation: By leveraging the power of the foundation model and few-shot learning, we only need to conduct a limited number of experiments under a few conditions. This allows the model to effectively generalize to new conditions without extensive data collection. </br>
