@@ -56,8 +56,8 @@ Our foundation model can rapidly adapt to previously unseen reactor types, such 
 ## Citation </br>
 If you find our work relevant to your research, please cite:
 ```
-@article{wang2024foundation,
-  title={Foundation Model for Chemical Process Modeling: Meta-Learning with Physics-Informed Adaptation},
+@article{wang2024towards,
+  title={Towards Foundation Model for Chemical Reactor Modeling: Meta-Learning with Physics-Informed Adaptation},
   author={Wang, Zihao and Wu, Zhe},
   journal={arXiv preprint arXiv:2405.11752},
   year={2024}
