@@ -2,7 +2,7 @@
 
 Zihao Wang, Zhe Wu </br>
 **Chemical Engineering Research and Design** </br>
-Paper: https://arxiv.org/abs/2405.11752 </br>
+Paper: https://doi.org/10.1016/j.cherd.2025.05.015 </br>
 
 **Requires: Python 3.11.3, Tensorflow Keras 2.13.0, Numpy, Sklearn, Pickle** </br>
 
